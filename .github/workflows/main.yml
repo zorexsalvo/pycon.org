@@ -20,9 +20,9 @@ jobs:
       - name: setup ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.7.x
+          ruby-version: 3.3.x
       - name: bundle install
-        run: | 
+        run: |
           gem update --system --no-document
           gem update bundler --no-document
           gem install jekyll bundler
