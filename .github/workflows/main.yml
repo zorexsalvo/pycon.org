@@ -18,11 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: setup ruby
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 2.7.x
+        uses: ruby/setup-ruby@v1
       - name: bundle install
-        run: | 
+        run: |
           gem update --system --no-document
           gem update bundler --no-document
           gem install jekyll bundler
